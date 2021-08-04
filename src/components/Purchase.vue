@@ -1,7 +1,7 @@
 <template>
   <section class="purchase">
     <div class="container">
-        <button type="button" @click="togglePopup" class="btn">К покупкам</button>
+      <button type="button" @click="togglePopup" class="btn">К покупкам</button>
     </div>
     <purchase-popup v-if="isPopupShown" @togglePopup="togglePopup"/>
   </section>

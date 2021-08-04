@@ -5,53 +5,56 @@
 <style lang="scss">
 
 html, body {
-    height: 100%;
+  height: 100%;
 }
+
 body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-webkit-font-smoothing: grayscale;
-    margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-webkit-font-smoothing: grayscale;
+  margin: 0;
 }
+
 #app {
   height: 100%;
 }
+
 .wrapper {
-    min-width: 0;
-    height: 100%;
-    width: 100%;
+  min-width: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .container {
-    width: auto;
-    max-width: 918px;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: auto;
+  max-width: 918px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 
-    li {
-        list-style-type: none;
-    }
+  li {
+    list-style-type: none;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    font-weight: normal;
+  margin: 0;
+  font-weight: normal;
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 a {
   color: black;

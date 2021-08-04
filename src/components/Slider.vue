@@ -1,28 +1,28 @@
 <template>
-    <section class="slider">
-      <div class="container">
-        <div class="slider__container">
-            <a href="#" class="slider__btn" @click.prevent="prevSlide">
-              <svg class="slider__btn-pic" width="24" height="44" viewBox="0 0 24 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22 2L2 22L22 42"
-                 stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-            <slider-item
-                v-for="item in items"
-                :key="item.id"
-                :item="item"
-                :selectedItem="currentItemIndex">
-            </slider-item>
-            <a href="#" class="slider__btn slider__btn--next" @click.prevent="nextSlide">
-              <svg class="slider__btn-pic" width="24" height="44" viewBox="0 0 24 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22 2L2 22L22 42"
-                 stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-        </div>
+  <section class="slider">
+    <div class="container">
+      <div class="slider__container">
+          <a href="#" class="slider__btn" @click.prevent="prevSlide">
+            <svg class="slider__btn-pic" width="24" height="44" viewBox="0 0 24 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 2L2 22L22 42"
+                stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <slider-item
+              v-for="item in items"
+              :key="item.id"
+              :item="item"
+              :selectedItem="currentItemIndex">
+          </slider-item>
+          <a href="#" class="slider__btn slider__btn--next" @click.prevent="nextSlide">
+            <svg class="slider__btn-pic" width="24" height="44" viewBox="0 0 24 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 2L2 22L22 42"
+                stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
       </div>
-    </section>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -106,6 +106,7 @@ export default {
 .slider {
   background: beige;
   padding: 50px 0;
+
   &__container {
     display: flex;
     justify-content: center;
@@ -113,12 +114,15 @@ export default {
     max-width: 650px;
     margin: 0 auto;
   }
+
   &__btn--next {
     transform: rotateY(180deg);
   }
+
   &__btn-pic {
     stroke: #D0D4CD;
     transition: stroke .3s;
+
     &:hover {
       stroke: black;
       transition: stroke .3s;

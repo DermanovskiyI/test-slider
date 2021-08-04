@@ -1,19 +1,19 @@
 <template>
-<div class="form-popup-bg">
+  <div class="form-popup-bg">
     <div class="form-container">
-        <button id="btnCloseForm" class="close-button" @click="handleTogglePopup">X</button>
-        <form @submit.prevent="sendData" v-if="!purchased" class="form">
-            <div class="form-group">
-                <label for="">E-Mail Address</label>
-                <input class="form-control" v-model="inputValue" type="text" />
-                <div class="error" v-if="invalidEmail">Не правильный email</div>
-            </div>
-            <button type="submit" class="send-btn">Отправить</button>
-        </form>
+      <button id="btnCloseForm" class="close-button" @click="handleTogglePopup">X</button>
+      <form @submit.prevent="sendData" v-if="!purchased" class="form">
+        <div class="form-group">
+          <label for="">E-Mail Address</label>
+          <input class="form-control" v-model="inputValue" type="text" />
+          <div class="error" v-if="invalidEmail">Не правильный email</div>
+        </div>
+        <button type="submit" class="send-btn">Отправить</button>
+      </form>
       <div class="success" v-else-if="purchased">СПАСИБО</div>
     </div>
     <div class="overlay" @click="handleTogglePopup"></div>
-</div>
+  </div>
 </template>
 
 <script>
